@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameSimulationLibrary
+namespace GameSimulationLibrary.Interfaces
 {
-    public class Class1
+    interface IPlayer<T>
     {
+        void DetermineOverall(List<int> intList);
     }
 }
