@@ -1,4 +1,4 @@
-﻿using GameSimulationLibrary.Interfaces;
+﻿using GameSimulationLibrary.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,23 +7,18 @@ using System.Threading.Tasks;
 
 namespace GameSimulationLibrary.Models
 {
-    class Player : IPlayer<Player>
+    public class Player
     {
-        public string FirstName;
-        public string LastName;
-        public int Overall;
+        // General Information
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Overall { get; set; }
+        public int Potential { get; set; }
 
-        public void DetermineOverall(List<int> intList)
-        {
-            intList.Sort();
-            int total = 0, count = 0;
-
-            foreach(var num in intList)
-            {
-                total = (num * (intList.Count - count++));
-            }
-
-            Overall = (total / intList.Count);
-        }
+        //General Stats
+        public int Speed { get; set; }
+        public int Awareness { get; set; }
+        public int Intelligence { get; set; }
+        public int Strength { get; set; }
     }
 }
