@@ -29,7 +29,6 @@ namespace GameSimulationLibrary.Services
                 for (int i = 0; i <= 5; i++)
                 {
                     improveRate = rand.Next(0, (potential - overall));
-                    Console.WriteLine("i: " + i.ToString() + " val: " + improveRate.ToString());
                     if (improveRate <= 5 + i)
                     {
                         break;
@@ -39,14 +38,6 @@ namespace GameSimulationLibrary.Services
                 return skillValue + improveRate;
 
             }
-        }
-
-        public int DetemineGeneralStatOverall()
-        {
-            return (_player.Awareness +
-                    _player.Intelligence +
-                    _player.Speed +
-                    _player.Strength);
         }
     }
 }
