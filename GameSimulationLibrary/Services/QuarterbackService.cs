@@ -28,7 +28,6 @@ namespace GameSimulationLibrary.Services
                                    (_quarterback.Strength)) / 13;
         } 
         
-        //TODO make all positions into classes
         public int ShortPassRoll()
         {
             var maxRoll = ((_quarterback.ThrowingAccuracy * 2) +
