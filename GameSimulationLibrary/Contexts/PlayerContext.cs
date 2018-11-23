@@ -11,5 +11,6 @@ namespace GameSimulationLibrary.Contexts
     class PlayerContext : DbContext
     {
         public DbSet<Quarterback> Quarterbacks { get; set; }
+        public DbSet<Runningback> Runningbacks { get; set; }
     }
 }

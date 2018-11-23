@@ -14,15 +14,11 @@ namespace GameSimulationLibrary.Models
         public Quarterback
         (
             string firstName,
-            string lastName,
-            int potential,
-            int overall
+            string lastName
         )
         {
             FirstName = firstName;
             LastName = lastName;
-            Potential = potential;
-            Overall = overall;
         }
     }
 }

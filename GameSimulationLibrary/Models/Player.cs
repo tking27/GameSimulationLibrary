@@ -20,5 +20,8 @@ namespace GameSimulationLibrary.Models
         public int Awareness { get; set; }
         public int Intelligence { get; set; }
         public int Strength { get; set; }
+
+        //Team Info
+        public string TeamName { get; set; }
     }
 }
