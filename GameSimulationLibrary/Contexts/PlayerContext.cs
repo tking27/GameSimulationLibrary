@@ -12,5 +12,6 @@ namespace GameSimulationLibrary.Contexts
     {
         public DbSet<Quarterback> Quarterbacks { get; set; }
         public DbSet<Runningback> Runningbacks { get; set; }
+        public DbSet<WideReceiver> Widereceivers { get; set; }
     }
 }

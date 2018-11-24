@@ -54,10 +54,12 @@
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Quarterback.cs" />
     <Compile Include="Models\Runningback.cs" />
+    <Compile Include="Models\WideReceiver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PlayerService.cs" />
     <Compile Include="Services\QuarterbackService.cs" />
     <Compile Include="Services\RunningbackService.cs" />
+    <Compile Include="Services\WidereceiverService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
